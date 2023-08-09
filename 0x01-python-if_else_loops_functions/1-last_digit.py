@@ -5,9 +5,9 @@ value = abs(number) % 10
 if number < 0:
     value = -value
 print("Last digit of {} is {} and is ".format(number, value), end="")
-if digit > 5:
+if value > 5:
     print("greater than 5")
-elif digit == 0:
+elif value == 0:
     print("0")
 else:
     print("less than 6 and not 0")
