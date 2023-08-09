@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-for value1 in range(9):
+for value1 in range(0, 10):
     for value2 in range(value1 + 1, 10):
-        print(f"{value1}{value2}", end=", " if value1 < 8 or value2 < 9 else "\n")
+        if value1 == 8 and value2 == 9:
+            print("{}{}".format(value1, value2))
+        else:
+            print("{}{}".format(value1, value2), end=", ")
