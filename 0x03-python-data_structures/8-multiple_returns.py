@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+# 8-multiple_returns.py
+
+
 def multiple_returns(sentence):
-    the_list = list(sentence)
-    if the_list[0] == "":
+    """Returns the length of a string and its first character."""
+    if sentence == "":
         return (0, None)
-    mul_tuple = (len(sentence), the_list[0])
-    return (mul_tuple)
+    return (len(sentence), sentence[0])
