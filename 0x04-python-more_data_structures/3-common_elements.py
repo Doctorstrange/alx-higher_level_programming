@@ -5,5 +5,5 @@ def common_elements(set_1, set_2):
             if x == y:
                 return (x)
             else:
-               continue
+                continue
     return (None)
