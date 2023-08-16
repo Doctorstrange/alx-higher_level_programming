@@ -4,7 +4,6 @@ def square_matrix_simple(matrix=[]):
     index = 0
     for row in matrix:
         count = 0
-       # index += 1
         for column in row:
             matrix_copy[index][count] = column**2
             count += 1
