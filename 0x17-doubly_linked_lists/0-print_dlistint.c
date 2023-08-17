@@ -3,6 +3,12 @@
 #include <stdio.h>
 #include "lists.h"
 
+/**
+ *print_dlistint - print all elements on the list
+ *@h: head pointer
+ *Return: number of nodes in list
+ */
+
 size_t print_dlistint(const dlistint_t *h)
 {
 	int number = 0;
