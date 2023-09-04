@@ -3,5 +3,4 @@
 
 
 class Rectangle:
-    """value of rectangle"""
     pass
