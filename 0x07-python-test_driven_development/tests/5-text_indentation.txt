@@ -1,0 +1,88 @@
+##How to Use 5-text_indentation.py
+
+function that prints a text with 2 new lines after each of these
+characters: ., ? and :
+
+##Usage
+
+function that prints a text with 2 new lines after each of
+these characters: ., ? and :
+
+::
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("c is fun?")
+c is fun?
+<BLANKLINE>
+no spaces are printed at the end of each printed line.
+::
+>>> text_indentation("Hello. ")
+Hello.
+<BLANKLINE>
+No space is printed at the beginning of a line.
+::
+>>> text_indentation(" what up.")
+what up.
+<BLANKLINE>
+::
+>>> text_indentation(" The beginning. and the end. ")
+the beginning.
+<BLANKLINE>
+and the end.
+<BLANKLINE>
+New lines are only printed for the characters ``.``, ``?``, and ``:`` -
+::
+>>> text_indentation("The beginning, and the end")
+The beginning, and the end
+main example
+::
+>>>text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
+Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: \
+Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere. \
+Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum \
+rationi oboediens. Si id dicis, vicimus. Inde sermone vario sex illa a Dipylo \
+stadia confecimus. Sin aliud quid voles, postea. Quae animi affectio suum \
+cuique tribuens atque hanc, quam dico. Utinam quidem dicerent alium alio \
+beatiorem! Iam ruinas videres""")
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Quonam modo?
+
+Utrum igitur tibi litteram videor an totas paginas commovere?
+
+Non autem hoc:
+
+igitur ne illud quidem.
+
+Fortasse id optimum, sed ubi illud:
+
+Plus semper voluptatis?
+
+Teneo, inquit, finem illi videri nihil dolere.
+
+Transfer idem ad modestiam vel temperantiam, quae est moderatio
+cupiditatum rationi oboediens.
+
+Si id dicis, vicimus.
+
+Inde sermone vario sex illa a Dipylo stadia confecimus.
+
+Sin aliud quid voles, postea.
+
+Quae animi affectio suum cuique tribuens atque hanc, quam dico.
+Invalid Text
+============
+The paramter ``text`` must be a string. Otherwise, a TypeError is raised.
+::
+>>> text_indentation({"twenty": 2, "sixty": 4})
+Traceback (most recent call last):
+TypeError: text must be a string
+::
+>>> text_indentation(8)
+Traceback (most recent call last):
+TypeError: text must be a string
+::
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
