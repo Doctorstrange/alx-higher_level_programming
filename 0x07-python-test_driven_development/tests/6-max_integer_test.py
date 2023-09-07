@@ -5,6 +5,11 @@ max_integer = __import__('6-max_integer').max_integer
 class TestMaxInteger(unittest.TestCase):
     """unittests max_integer"""
 
+    def test_max_at_begginning(self):
+        """Test a list with max at beginning"""
+        max_at_beginning = [4, 3, 2, 1]
+        self.assertEqual(max_integer(max_at_beginning), 4)
+
     def test_unordered_list(self):
         """Test list of integers."""
         unordered = [1, 2, 4, 3, 4, 5]
