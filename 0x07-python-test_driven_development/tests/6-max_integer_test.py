@@ -3,7 +3,7 @@
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 class TestMaxInteger(unittest.TestCase):
-    """unittests max_integer"""
+    """unittests max_integer([..])"""
 
     def test_max_at_begginning(self):
         """Test a list with max at beginning"""
