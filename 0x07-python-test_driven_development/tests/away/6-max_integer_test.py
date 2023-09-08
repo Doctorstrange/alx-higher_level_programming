@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-# tests.6-max_integer_test.py
+# test.6-max_integer_test.py
 """Unittests for max_integer([..])."""
 import unittest
-max_integer = __import__('7-max_integer').max_integer
+max_integer = __import__('test.6-max_integer').max_integer
 class TestMaxInteger(unittest.TestCase):
 	"""Define unittests for max_integer([..])."""
 	def test_ordered_list(self):
