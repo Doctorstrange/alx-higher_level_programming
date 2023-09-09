@@ -8,14 +8,17 @@ class TestMaxInteger(unittest.TestCase):
 		"""ordered list of integers."""
 		ordered = [1, 2, 3, 4, 5]
 		self.assertEqual(max_integer(ordered), 5)
+
+	def test_max_at_begginning(self):
+		"""list with a beginning max value."""
+		max_at_beginning = [6, 5, 4, 3, 2, 1]
+		self.assertEqual(max_integer(max_at_beginning), 6)
+
 	def test_unordered_list(self):
 		"""unordered list of integers"""
 		unordered = [1, 2, 4, 3, 5, 9, 8]
 		self.assertEqual(max_integer(unordered), 9)
-	def test_max_at_begginning(self):
-		"""Test a list with a beginning max value."""
-		max_at_beginning = [4, 3, 2, 1]
-		self.assertEqual(max_integer(max_at_beginning), 4)
+
 	def test_empty_list(self):
 		"""Test an empty list."""
 		empty = []
