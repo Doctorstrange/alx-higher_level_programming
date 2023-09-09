@@ -22,7 +22,6 @@ def matrix_divided(matrix, div):
 
     if div == 0:
         raise ZeroDivisionError("division by zero")
-
     result = []
 
     for row in matrix:
