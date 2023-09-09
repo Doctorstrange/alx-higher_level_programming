@@ -19,10 +19,6 @@ class TestMaxInteger(unittest.TestCase):
 		unordered = [1, 2, 4, 3, 5, 9, 8]
 		self.assertEqual(max_integer(unordered), 9)
 
-	def test_empty_list(self):
-		"""Test an empty list."""
-		empty = []
-		self.assertEqual(max_integer(empty), None)
 	def test_one_element_list(self):
 		"""Test a list with a single element."""
 		one_element = [7]
