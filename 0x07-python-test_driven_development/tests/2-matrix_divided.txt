@@ -47,16 +47,7 @@ is raised.
 ... ]
 >>> print(matrix_divided(matrix, "not a number"))
 Traceback (most recent call last):
-TypeError: div must be a number
-::
->>> print(matrix_divided(matrix, None))
-Traceback (most recent call last):
-TypeError: div must be a number
-``div`` must also be non-zero. Otherwise, a ZeroDivisionError is raised.
-::
->>> print(matrix_divided(matrix, 0))
-Traceback (most recent call last):
-ZeroDivisionError: division by zero
+
 
 ## Invalid Matrices
 
@@ -96,3 +87,14 @@ integers nor floats.
 >>> print(matrix_divided(matrix, 3))
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+TypeError: div must be a number
+::
+>>> print(matrix_divided(matrix, None))
+Traceback (most recent call last):
+TypeError: div must be a number
+``div`` must also be non-zero. Otherwise, a ZeroDivisionError is raised.
+::
+>>> print(matrix_divided(matrix, 0))
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
