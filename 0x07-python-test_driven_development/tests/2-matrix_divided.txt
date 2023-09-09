@@ -68,12 +68,13 @@ ZeroDivisionError: division by zero
 
 ## Invalid Matrices
 
-The parameter ``matrix`` must be a list of lists consisting of either ints or
-floats. If ``matrix`` is not a list, a TypeError is raised.
+The parameter ``matrix`` must be a list of lists
 ::
 >>> matrix = "not a list"
 >>> print(matrix_divided(matrix, 3))
 Traceback (most recent call last):
+
+
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 ::
 >>> matrix = None
@@ -101,3 +102,5 @@ rows in ``matrix`` must be the same size
 >>> print(matrix_divided(matrix, 2))
 Traceback (most recent call last):
 TypeError: Each row of the matrix must have the same size
+
+######
