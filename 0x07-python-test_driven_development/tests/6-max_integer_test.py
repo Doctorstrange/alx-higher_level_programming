@@ -26,8 +26,8 @@ class TestMaxInteger(unittest.TestCase):
 
 	def test_string(self):
 		"""Test a string."""
-		string = "Brennan"
-		self.assertEqual(max_integer(string), 'r')
+		string = "femi"
+		self.assertEqual(max_integer(string), 'f')
 
 
 	def test_empty_string(self):
