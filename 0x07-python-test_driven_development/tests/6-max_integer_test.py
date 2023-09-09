@@ -53,4 +53,4 @@ class TestMaxInteger(unittest.TestCase):
 		"""empty string."""
 		self.assertEqual(max_integer(""), None)
 if __name__ == '__main__':
-    unittest.main()
+
