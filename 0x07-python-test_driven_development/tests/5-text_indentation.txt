@@ -92,7 +92,7 @@ Traceback (most recent call last):
 
 TypeError: text must be a string
 ::
->>> text_indentation({"one": 1, "two": 2})
+>>> text_indentation({"three": 3, "four": 4})
 Traceback (most recent call last):
 TypeError: text must be a string
 
