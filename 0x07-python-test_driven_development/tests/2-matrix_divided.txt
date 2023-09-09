@@ -1,6 +1,8 @@
 ## How to Use 2-matrix_divided.py
 
 This module defines a matrix division function ``matrix_divided(matrix, div)``.
+
+
 ## Usage
 
 ``matrix_divided(...)`` returns a new matrix that is a copy
@@ -44,7 +46,7 @@ Note that quotients are rounded to a maximum of two decimal places.
 
 ##Invalid Divisors
 
-The parameter ``div`` must be either an int or float. Otherwise, a TypeError
+The parameter ``div`` must be either an int or float
 is raised.
 ::
 >>> matrix = [
@@ -58,7 +60,7 @@ TypeError: div must be a number
 >>> print(matrix_divided(matrix, None))
 Traceback (most recent call last):
 TypeError: div must be a number
-``div`` must also be non-zero. Otherwise, a ZeroDivisionError is raised.
+``div`` must also be non-zero
 ::
 >>> print(matrix_divided(matrix, 0))
 Traceback (most recent call last):
@@ -75,7 +77,7 @@ The parameter ``matrix`` must be a list of lists
 Traceback (most recent call last):
 
 
-TypeError: matrix must be a matrix (list of lists) of integers/floats
+TypeError: matrix must be a matrix (list of lists)
 ::
 >>> matrix = None
 >>> print(matrix_divided(matrix, 3))
