@@ -6,7 +6,7 @@ case 0: import
 >>>
 
 
-11111111111
+11111111111111111111
 
 >>> my_list = MyList()
 >>> my_list.append(1)
@@ -23,6 +23,7 @@ case 0: import
 >>>
 
 222222222222222222222
+undefined object
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list2.print_sorted()
@@ -33,6 +34,8 @@ NameError: name 'my_list2' is not defined
 
 
 333333333333333333333
+when list is passed
+
 
 >>> a = [1, 9, 4]
 >>> my_list = MyList(a)
@@ -41,6 +44,8 @@ NameError: name 'my_list2' is not defined
 >>>
 
 4444444444444444444444
+append negative numbers
+
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
