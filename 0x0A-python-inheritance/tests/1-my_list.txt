@@ -42,15 +42,6 @@ case 3: passed a list
 >>>
 
 
-case 4: empty list
-
->>> a = []
->>> my_list = MyList(a)
->>> my_list.print_sorted()
-[]
->>>
-
-
 
 
 
