@@ -1,12 +1,15 @@
 #### Test 1-my_list.py
 
 
-case 0: import
+#########################################
+import
+
 >>> MyList = __import__('1-my_list').MyList
 >>>
 
 
-case 1: common case
+##########################################
+provided test
 
 >>> my_list = MyList()
 >>> my_list.append(1)
@@ -23,7 +26,8 @@ case 1: common case
 >>>
 
 
-case 2: not defined object
+#########################################
+object not defined
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list2.print_sorted()
@@ -34,7 +38,8 @@ NameError: name 'my_list2' is not defined
 
 
 
-case 3: passed a list
+##########################################
+pass list
 
 >>> a = [1, 3, 2]
 >>> my_list = MyList(a)
@@ -44,7 +49,8 @@ case 3: passed a list
 
 
 
-case 8: negative numbers
+###########################################
+pass negative number
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
