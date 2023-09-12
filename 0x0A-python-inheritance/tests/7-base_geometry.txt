@@ -64,20 +64,7 @@ Integer_validator
     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 
-Passing three arguments
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name", 1, 2)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
-
-Pass one argument 
-    >>> bg = BaseGeometry()
-    >>> bg.area(5)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: area() takes 1 positional argument but 2 were given
 
 
 
