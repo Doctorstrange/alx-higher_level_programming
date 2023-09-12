@@ -71,7 +71,7 @@ case 6: same number
 >>> my_list2.append(1)
 >>> my_list2.print_sorted()
 [1, 1, 1, 1]
->>>
+
 
 
 case 8: negative numbers
