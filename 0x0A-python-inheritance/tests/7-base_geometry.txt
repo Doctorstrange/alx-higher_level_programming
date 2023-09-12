@@ -5,32 +5,6 @@
 
 
 
-
-
-pass a boolean value
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name", True)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: name must be an integer
-
-
-
-
-
-pass a zero value
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name", 0)
-    Traceback (most recent call last):
-    	      ...
-    ValueError: name must be greater than 0
-
-
-Pass a positive value
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name", 5)
-
-
 Pass one argument 
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("name")
@@ -80,3 +54,46 @@ Pass None to method
     Traceback (most recent call last):
               ...
     TypeError: age must be an integer
+
+
+
+print area 
+    >>> bg = BaseGeometry()
+    >>> bg.area()
+    Traceback (most recent call last):
+    	      ...
+    Exception: area() is not implemented
+
+
+pass a non-integer argument
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", "5")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: name must be an integer
+
+
+pass a boolean value
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", True)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: name must be an integer
+
+
+
+
+
+pass a zero value
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", 0)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: name must be greater than 0
+
+
+Pass a positive value
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", 5)
+
+
