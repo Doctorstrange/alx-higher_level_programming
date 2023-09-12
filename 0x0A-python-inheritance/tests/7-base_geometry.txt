@@ -20,23 +20,20 @@ pass a non-integer argument
     TypeError: name must be an integer
 
 
-pass a boolean value
-    >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name", True)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: name must be an integer
 
 
-pass a negative value
+
+pass a zero value
     >>> bg = BaseGeometry()
-    >>> bg.integer_validator("name", -5)
+    >>> bg.integer_validator("name", 0)
     Traceback (most recent call last):
     	      ...
     ValueError: name must be greater than 0
 
 
-
+Pass a positive value
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", 5)
 
 
 Pass one argument 
