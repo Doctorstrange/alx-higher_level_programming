@@ -62,15 +62,6 @@ case 5: unique number
 >>>
 
 
-case 6: same number
-
->>> my_list2 = MyList()
->>> my_list2.append(1)
->>> my_list2.append(1)
->>> my_list2.append(1)
->>> my_list2.append(1)
->>> my_list2.print_sorted()
-[1, 1, 1, 1]
 
 
 
