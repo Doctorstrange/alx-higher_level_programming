@@ -6,7 +6,7 @@ case 0: import
 >>>
 
 
-case 1: common case
+11111111111
 
 >>> my_list = MyList()
 >>> my_list.append(1)
@@ -22,8 +22,7 @@ case 1: common case
 [1, 4, 2, 3, 5]
 >>>
 
-
-case 2: not defined object
+222222222222222222222
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list2.print_sorted()
@@ -33,7 +32,7 @@ NameError: name 'my_list2' is not defined
 >>>
 
 
-case 3: passed a list
+333333333333333333333
 
 >>> a = [1, 9, 4]
 >>> my_list = MyList(a)
@@ -41,12 +40,7 @@ case 3: passed a list
 [1, 4, 9]
 >>>
 
-
-
-
-
-
-case 8: negative numbers
+4444444444444444444444
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
