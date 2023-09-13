@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Write a class Student that defines a student by"""
 
+
 class Student:
     """Write a class Student that defines a student by"""
-
 
     def __init__(self, first_name, last_name, age):
         """Write a class Student that defines a student by
