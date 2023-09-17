@@ -1,0 +1,9 @@
+setup.py
+models/1-main.py
+models/__init__.py
+models/base.py
+models/rectangle.py
+strangeset.egg-info/PKG-INFO
+strangeset.egg-info/SOURCES.txt
+strangeset.egg-info/dependency_links.txt
+strangeset.egg-info/top_level.txt
