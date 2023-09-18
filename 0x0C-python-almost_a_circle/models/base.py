@@ -2,6 +2,7 @@
 """ the first class Base"""
 import json
 
+
 class Base:
     """the “base” of all other classes in this project"""
 
@@ -22,7 +23,6 @@ class Base:
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
-
 
     @classmethod
     def save_to_file(cls, list_objs):
