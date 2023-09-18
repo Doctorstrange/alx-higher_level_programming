@@ -2,9 +2,9 @@
 """ the class Rectangle that inherits from Base"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """ the class Rectangle that inherits from Base"""
-
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
@@ -25,7 +25,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """to set the width value for private attribute __width"""
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
@@ -39,7 +39,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """setter for the height attribute"""
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
@@ -53,7 +53,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """set the value of x"""
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
@@ -67,7 +67,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """setter for the y attribute"""
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
@@ -128,11 +128,9 @@ class Rectangle(Base):
                 if key == "y":
                     self.y = ele
 
-
-
     def to_dictionary(self):
         """returns the dictionary representation of a Rectangle:
         Return: returns the dictionary representation of a Rectangle:
         """
-        return {"id" : self.id,"width": self.width, "height" : self.height,
-                "x" : self.x, "y" : self.y, }
+        return {"id": self.id, "width": self.width, "height": self.height,
+                "x": self.x, "y": self.y}
