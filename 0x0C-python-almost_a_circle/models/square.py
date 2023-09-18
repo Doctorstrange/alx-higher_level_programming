@@ -2,11 +2,11 @@
 """the class Square that inherits from Rectangle"""
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """the class Square that inherits from Rectangle"""
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
-
 
     @property
     def size(self):
@@ -19,14 +19,14 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-
     def __str__(self):
         """returns [square] (<id>) <x>/<y> - <width>/<height>
         Return: [square] (<id>) <x>/<y> - <width>/<height>
         """
         return "[Rectangle] ({}), {}/{} - {}". format(self.id, self.x,
-                                                         self.y, self.size,
-                                                         )
+                                                      self.y, self.size,
+                                                      )
+
     def update(self, *args, **kwargs):
         """Update the class Square by adding the public method def
         update(self, *args, **kwargs) that assigns attributes:
@@ -64,5 +64,5 @@ class Square(Rectangle):
         """returns the dictionary representation of a Rectangle:
         Return: returns the dictionary representation of a Rectangle:
         """
-        return {"id" : self.id, "size" : self.width,
-                "x" : self.x, "y" : self.y,}
+        return {"id": self.id, "size": self.width,
+                "x": self.x, "y": self.y}
