@@ -52,13 +52,10 @@ class Square(Rectangle):
                     self.y == ele
                 count += 1
 
-        elif kwargs and kwargs != 0:
+        elif kwargs != 0:
             for key, ele in kwargs.items():
                 if key == "id":
-                    if ele is None:
-                        self.__init__(self.size, self.x, self.y)
-                    else:
-                        self.id = ele
+                    self.id = ele
                 if key == "size":
                     self.size = ele
                 if key == "x":
