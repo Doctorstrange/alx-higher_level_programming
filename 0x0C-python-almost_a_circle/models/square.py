@@ -23,7 +23,7 @@ class Square(Rectangle):
         """returns [square] (<id>) <x>/<y> - <width>/<height>
         Return: [square] (<id>) <x>/<y> - <width>/<height>
         """
-        return "[Rectangle] ({}), {}/{} - {}". format(self.id, self.x,
+        return "[Rectangle] ({}) {}/{} - {}". format(self.id, self.x,
                                                       self.y, self.size,
                                                       )
 
