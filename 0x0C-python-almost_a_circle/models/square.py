@@ -40,10 +40,7 @@ class Square(Rectangle):
             count = 0
             for ele in args:
                 if count == 0:
-                    if ele is None:
-                        self.__init__(self.size, self.x, self.y)
-                    else:
-                        self.id = ele
+                    self.id = ele
                 elif count == 1:
                     self.size = ele
                 elif count == 2:
