@@ -23,9 +23,9 @@ class Square(Rectangle):
         """returns [square] (<id>) <x>/<y> - <width>/<height>
         Return: [square] (<id>) <x>/<y> - <width>/<height>
         """
-        return "[Rectangle] ({}) {}/{} - {}". format(self.id, self.x,
-                                                      self.y, self.size,
-                                                      )
+        return "[Square] ({}) {}/{} - {}". format(self.id, self.x,
+                                                     self.y, self.size,
+                                                     )
 
     def update(self, *args, **kwargs):
         """Update the class Square by adding the public method def
