@@ -36,21 +36,29 @@ class Square(Rectangle):
         4th argument should be the y attribute
         """
 
-        if len(args) != 0:
+        if args and len(args) != 0:
+            count = 0
             for ele in args:
-                if ele == 0:
-                    self.id = ele
-                if ele == 1:
+                if count == 0:
+                    if ele is None:
+                        self.__init__(self.size, self.x, self.y)
+                    else:
+                        self.id = ele
+                elif count == 1:
                     self.size = ele
-                if ele == 2:
+                elif count == 2:
                     self.x = ele
-                if ele == 3:
+                elif count == 3:
                     self.y == ele
+                count += 1
 
-        elif kwargs != 0:
+        elif kwargs and kwargs != 0:
             for key, ele in kwargs.items():
                 if key == "id":
-                    self.id = ele
+                    if ele is None:
+                        self.__init__(self.size, self.x, self.y)
+                    else:
+                        self.id = ele
                 if key == "size":
                     self.size = ele
                 if key == "x":
