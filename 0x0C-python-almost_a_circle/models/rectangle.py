@@ -78,9 +78,52 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
+        """prints in stdout the Rectangle instance with the character
+        # - you don’t need to handle x and y here."""
         if self.width == 0 or self.height == 0:
             print("")
             return
-        for _ in range(self.height):
-            x = "#" * self.width
-            print(x)
+
+        [print("") for y in range(self.y)]
+        for h in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for y in range(self.width)]
+            print("")
+
+    def __str__(self):
+        """returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        Return: [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return "[Rectangle] ({}), {}/{} - {}/{}". format(self.id, self.x,
+                                                         self.y, self.width,
+                                                         self.height)
+
+    def update(self, *args, **kwargs):
+        """ assigns an argument to each attribute:"""
+        if len(args) != 0:
+            count = 0
+            for ele in args:
+                if count == 0:
+                    self.id = ele
+                if count == 1:
+                    self.width = ele
+                if count == 2:
+                    self.height = ele
+                if count == 3:
+                    self.x = ele
+                if count == 4:
+                    self.y = ele
+                count += 1
+
+        elif len(kwargs) != 0:
+            for key, ele in kwargs.items():
+                if key == "id":
+                    self.id = ele
+                if key == "width":
+                    self.width = ele
+                if key == "height":
+                    self.height = ele
+                if key == "x":
+                    self.x = ele
+                if key == "y":
+                    self.y = ele
