@@ -36,7 +36,7 @@ class Square(Rectangle):
         4th argument should be the y attribute
         """
 
-        if args and len(args) != 0:
+        if len(args) != 0:
             count = 0
             for ele in args:
                 if count == 0:
