@@ -36,13 +36,31 @@ class Testto_json_string(unittest.TestCase):
         dic_list = [s1.to_dictionary(), s2.to_dictionary()]
         self.assertTrue(len(Base.to_json_string(dic_list)) == 76)
 
-    def testsquare_type(self):
-        s = Square(4, 5, 7, 3)
-        self.assertEqual(str, type(Base.to_json_string([s.to_dictionary()])))
+class TestSaveToFile(unittest.TestCase):
 
-    def testsquare_to_dict(self):
-        s = Square(4, 5, 7, 3)
-        self.assertTrue(len(Base.to_json_string([s.to_dictionary()])) == 38)
+    def test_empty_list(self):
+        empty_list = []
+        Base.save_to_file(empty_list)
+
+        with open("Base.json", "r") as jsonfile:
+            content = jsonfile.read()
+            self.assertEqual(content, "[]")
+
+    def testfile_with_data(self):
+        class ExampleObject:
+            def __init__(self, name):
+                self.name = name
+
+            def to_dictionary(self):
+                return {"name": self.name}
+
+        data = [ExampleObject("femi"), ExampleObject("ashley")]
+        Base.save_to_file(data)
+
+        with open("Base.json", "r") as jsonfile:
+            content = jsonfile.read()
+            expected_json = json.dumps([{"name": "femi"}, {"name": "ashley"}])
+            self.assertEqual(content, expected_json)
 
 
 if __name__ == '__main__':
