@@ -22,13 +22,19 @@ class Testto_json_string(unittest.TestCase):
     def test_valid_input(self):
         # Test with a valid list of dictionaries
         data = [
-            {"name": "Alice", "age": 30},
-            {"name": "Bob", "age": 25},
+            {"name": "femi", "age": 31},
+            {"name": "ashley", "age": 28},
         ]
-        expected_json = json.dumps(data)  # Expected JSON representation
+        expected_json = json.dumps(data)
 
         result = Base.to_json_string(data)
         self.assertEqual(result, expected_json)
+
+    def square_two_dicts(self):
+        s1 = Square(10, 2, 3, 4)
+        s2 = Square(4, 5, 21, 2)
+        dic_list = [s1.to_dictionary(), s2.to_dictionary()]
+        self.assertTrue(len(Base.to_json_string(dic_list)) == 78)
 
 if __name__ == '__main__':
     unittest.main()
