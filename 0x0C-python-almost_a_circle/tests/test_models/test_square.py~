@@ -1,0 +1,32 @@
+#!/usr/bin/python3
+"""unitest for base.py"""
+
+import json
+import unittest
+from models.base import Base
+from models.square import Square
+
+class TestUpdate(unittest.TestCase):
+
+
+
+    def test_update_with_kwargs(self):
+        # Test updating attributes using keyword arguments
+        self.square.update(id=10, size=5, x=2, y=3)
+        self.assertEqual(self.square.id, 10)
+        self.assertEqual(self.square.size, 5)
+        self.assertEqual(self.square.x, 2)
+        self.assertEqual(self.square.y, 3)
+
+    def test_update_mixed_args_kwargs(self):
+        # Test updating attributes using both positional and keyword arguments
+        self.square.update(10, size=5, x=2, y=3)
+        self.assertEqual(self.square.id, 10)
+        self.assertEqual(self.square.size, 5)
+        self.assertEqual(self.square.x, 2)
+        self.assertEqual(self.square.y, 3)
+
+
+
+if __name__ == '__main__':
+    unittest.main()
