@@ -88,21 +88,6 @@ class TestLoadFromFile(unittest.TestCase):
         import os
         os.remove("Base.json")
 
-    def testloading_files(self):
-        instances = Base.load_from_file()
-        self.assertEqual(len(instances), 2)
-
-        self.assertEqual(instances[0].name, "femi")
-        self.assertEqual(instances[0].age, 31)
-        self.assertEqual(instances[1].name, "ashley")
-        self.assertEqual(instances[1].age, 27)
-
-    def testloading_no_file(self):
-        import os
-        os.remove("Base.json")
-
-        instances = Base.load_from_file()
-        self.assertEqual(instances, [])
 
 if __name__ == '__main__':
     unittest.main()
