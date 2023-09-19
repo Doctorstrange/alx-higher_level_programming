@@ -31,10 +31,14 @@ class Testto_json_string(unittest.TestCase):
         self.assertEqual(result, expected_json)
 
     def testsquare_two_dicts(self):
-        s1 = Square(10, 2, 3, 4)
-        s2 = Square(4, 5, 21, 2)
+        s1 = Square(8, 3, 4, 2)
+        s2 = Square(5, 7, 2, 8)
         dic_list = [s1.to_dictionary(), s2.to_dictionary()]
-        self.assertTrue(len(Base.to_json_string(dic_list)) == 78)
+        self.assertTrue(len(Base.to_json_string(dic_list)) == 76)
+
+    def testno_args(self):
+        with self.assertRaises(TypeError):
+            Base.to_json_string()
 
 if __name__ == '__main__':
     unittest.main()
