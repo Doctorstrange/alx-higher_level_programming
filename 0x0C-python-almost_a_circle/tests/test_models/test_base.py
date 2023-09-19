@@ -30,7 +30,7 @@ class Testto_json_string(unittest.TestCase):
         result = Base.to_json_string(data)
         self.assertEqual(result, expected_json)
 
-    def square_two_dicts(self):
+    def testsquare_two_dicts(self):
         s1 = Square(10, 2, 3, 4)
         s2 = Square(4, 5, 21, 2)
         dic_list = [s1.to_dictionary(), s2.to_dictionary()]
