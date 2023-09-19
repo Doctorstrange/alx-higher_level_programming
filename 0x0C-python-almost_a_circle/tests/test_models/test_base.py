@@ -62,6 +62,21 @@ class TestSaveToFile(unittest.TestCase):
             expected_json = json.dumps([{"name": "femi"}, {"name": "ashley"}])
             self.assertEqual(content, expected_json)
 
+class TestFromJsonString(unittest.TestCase):
+
+    def testjson_string_valid_json(self):
+        # Test parsing a valid JSON string
+        json_string = '[{"name": "femi", "age": 31}, {"name": "ashley", "age": 27}]'
+        expected_list = [{"name": "femi", "age": 31}, {"name": "ashley", "age": 27}]
+        result = Base.from_json_string(json_string)
+        self.assertEqual(result, expected_list)
+
+    def testjson_string_none_input(self):
+        # Test parsing None as input
+        result = Base.from_json_string(None)
+        self.assertEqual(result, [])
+
+
 
 if __name__ == '__main__':
     unittest.main()
