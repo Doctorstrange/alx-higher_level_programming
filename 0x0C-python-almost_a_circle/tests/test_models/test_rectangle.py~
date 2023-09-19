@@ -25,13 +25,6 @@ class TestArea(unittest.TestCase):
         result = rectangle.area()
         self.assertEqual(result, -20)
 
-class TestDisplay(unittest.TestCase):
-    def Testsetup(self):
-        self.rectangle = Rectangle(5, 2)
-
-
-
-
 
 
 if __name__ == '__main__':
