@@ -77,6 +77,32 @@ class TestFromJsonString(unittest.TestCase):
         self.assertEqual(result, [])
 
 
+class TestLoadFromFile(unittest.TestCase):
+
+    def testcreatefile(self):
+        data = [{"name": "femi", "age": 31}, {"name": "ashley", "age": 27}]
+        with open("Base.json", "w") as jsonfile:
+            jsonfile.write(json.dumps(data))
+
+    def testremovefile(self):
+        import os
+        os.remove("Base.json")
+
+    def testloading_files(self):
+        instances = Base.load_from_file()
+        self.assertEqual(len(instances), 2)
+
+        self.assertEqual(instances[0].name, "femi")
+        self.assertEqual(instances[0].age, 31)
+        self.assertEqual(instances[1].name, "ashley")
+        self.assertEqual(instances[1].age, 27)
+
+    def testloading_no_file(self):
+        import os
+        os.remove("Base.json")
+
+        instances = Base.load_from_file()
+        self.assertEqual(instances, [])
 
 if __name__ == '__main__':
     unittest.main()
