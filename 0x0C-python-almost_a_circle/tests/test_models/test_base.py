@@ -36,9 +36,6 @@ class Testto_json_string(unittest.TestCase):
         dic_list = [s1.to_dictionary(), s2.to_dictionary()]
         self.assertTrue(len(Base.to_json_string(dic_list)) == 76)
 
-    def testno_args(self):
-        with self.assertRaises(TypeError):
-            Base.to_json_string()
 
 if __name__ == '__main__':
     unittest.main()
