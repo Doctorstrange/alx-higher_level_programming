@@ -89,5 +89,21 @@ class TestLoadFromFile(unittest.TestCase):
         os.remove("Base.json")
 
 
+class TestCreate(unittest.TestCase):
+
+    def test_create_rectangle(self):
+        dictionary = {"width": 5, "height": 10}
+        instance = Rectangle.create(**dictionary)
+        self.assertIsInstance(instance, Rectangle)
+        self.assertEqual(instance.width, 5)
+        self.assertEqual(instance.height, 10)
+
+    def test_create_square(self):
+        dictionary = {"size": 7}
+        instance = Square.create(**dictionary)
+        self.assertIsInstance(instance, Square)
+        self.assertEqual(instance.size, 7)
+
+
 if __name__ == '__main__':
     unittest.main()
