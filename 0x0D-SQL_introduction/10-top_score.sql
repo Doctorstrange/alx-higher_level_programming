@@ -2,4 +2,4 @@
 --of the database hbtn_0c_0 in your MySQL serve
 SELECT `score`, `name`
 FROM `second_table`
-ORDER BY `score` DESC;
+ORDER BY `score` DESC
