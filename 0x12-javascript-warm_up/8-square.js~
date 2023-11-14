@@ -4,7 +4,7 @@ if (process.argv[2] === undefined || isNaN(process.argv[2])) {
 } else {
   const length = Number(process.argv[2]);
   let breath = 0;
-  while (breath < length) {
+  while (breath < x) {
     console.log('X'.repeat(length));
     breath++;
   }
