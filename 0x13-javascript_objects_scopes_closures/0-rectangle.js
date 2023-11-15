@@ -2,4 +2,4 @@
 class Rectangle {
 }
 
-module.export = Reactangle;
+module.exports = Reactangle;
