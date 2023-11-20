@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""displays all values in the states table of hbtn_0e_0_usa"""
+"""  displays all values in the states table of hbtn_0e_0_usa """
 import MySQLdb
 import sys
 
