@@ -9,6 +9,6 @@ if __name__ == "__main__":
         print_str = '''Body response:
 \t- type: {}
 \t- content: {}
-\t- utf8 content: {}'''.format(type(read_content),
-                               read_content, encode_content)
+\t- utf8 content: {}'''.format(type(read_content), read_content, encode_content)
         print(print_str)
+        
