@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """sends a request to the URL and displays the value variable X-Request-Id"""
 if __name__ == "__main__":
-    import urllib.request
+    import urllib.requests
     import sys
     url = sys.argv[1]
     with urllib.request.urlopen(url) as response:
