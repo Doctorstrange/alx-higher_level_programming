@@ -2,7 +2,7 @@
 """Python script that fetches https://alx-intranet.hbtn.io/status"""
 if __name__ == "__main__":
     import urllib.request
-    url = "https://intranet.hbtn.io/status"
+    url = "https://alx-intranet.hbtn.io/status"
     with urllib.request.urlopen(url) as response:
         read_content = response.read()
         encode_content = bytes_content.decode('utf-8')
