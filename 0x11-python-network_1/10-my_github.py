@@ -5,7 +5,7 @@ if __name__ == "__main__":
     from requests.auth import HTTPBasicAuth
     import sys
     url = "https://api.github.com/"
-    client_url = url + "client"
+    client_url = url + "user"
     username = sys.argv[1]
     password = sys.argv[2]
     response = requests.get(client_url,
